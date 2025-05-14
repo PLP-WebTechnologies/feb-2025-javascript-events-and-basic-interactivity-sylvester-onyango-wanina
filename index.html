@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event Handling & Interactive Elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive JavaScript Playground 🎉</h1>
+
+        <!-- Button to change text or color -->
+        <button id="interactiveBtn">Click Me!</button>
+
+        <!-- Image Gallery -->
+        <div id="imageGallery">
+            <img src="https://via.placeholder.com/150" alt="Image 1">
+            <img src="https://via.placeholder.com/150" alt="Image 2">
+            <img src="https://via.placeholder.com/150" alt="Image 3">
+        </div>
+
+        <!-- Tabs -->
+        <div id="tabs">
+            <button class="tab" data-target="tab1">Tab 1</button>
+            <button class="tab" data-target="tab2">Tab 2</button>
+            <button class="tab" data-target="tab3">Tab 3</button>
+
+            <div id="tab1" class="tab-content">Content for Tab 1</div>
+            <div id="tab2" class="tab-content">Content for Tab 2</div>
+            <div id="tab3" class="tab-content">Content for Tab 3</div>
+        </div>
+
+        <!-- Form with validation -->
+        <form id="userForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div id="emailError" class="error hidden">Please enter a valid email.</div>
+
+            <label for="password">Password (min 8 characters):</label>
+            <input type="password" id="password" name="password" required>
+            <div id="passwordError" class="error hidden">Password must be at least 8 characters.</div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Secret message for double click -->
+        <div id="secretMessage" class="hidden">You found the secret! 🤫</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
